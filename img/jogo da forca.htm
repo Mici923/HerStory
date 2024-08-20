@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/micil/.vscode/jogo-da-forca/forca.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./jogo da forca_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./jogo da forca_files/forca.css" media="screen">
+    <link href="./jogo da forca_files/boxicons.min.css" rel="stylesheet">
+    <title>jogo da forca</title>
+</head>
+<body>
+    <div class="container">
+        <div id="imagem">
+
+        </div>
+
+        <div id="palavra-secreta"><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letrasEspaco"> </div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div><div class="letras">&nbsp;</div></div>
+        <div id="teclado">
+            <div class="teclas">
+                <button id="tecla-A" onclick="verificaLetraEscolhida(&#39;A&#39;)">A</button>
+                <button id="tecla-B" onclick="verificaLetraEscolhida(&#39;B&#39;)">B</button>
+                <button id="tecla-C" onclick="verificaLetraEscolhida(&#39;C&#39;)">C</button>
+                <button id="tecla-D" onclick="verificaLetraEscolhida(&#39;D&#39;)">D</button>
+                <button id="tecla-E" onclick="verificaLetraEscolhida(&#39;E&#39;)">E</button>
+                <button id="tecla-F" onclick="verificaLetraEscolhida(&#39;F&#39;)">F</button>
+                <button id="tecla-G" onclick="verificaLetraEscolhida(&#39;G&#39;)">G</button>
+                <button id="tecla-H" onclick="verificaLetraEscolhida(&#39;H&#39;)">H</button>
+                <button id="tecla-I" onclick="verificaLetraEscolhida(&#39;I&#39;)">I</button>
+            </div>
+            <div class="teclas">
+                <button id="tecla-J" onclick="verificaLetraEscolhida(&#39;J&#39;)">J</button>
+                <button id="tecla-K" onclick="verificaLetraEscolhida(&#39;K&#39;)">K</button>
+                <button id="tecla-L" onclick="verificaLetraEscolhida(&#39;L&#39;)">L</button>
+                <button id="tecla-M" onclick="verificaLetraEscolhida(&#39;M&#39;)">M</button>
+                <button id="tecla-N" onclick="verificaLetraEscolhida(&#39;N&#39;)">N</button>
+                <button id="tecla-O" onclick="verificaLetraEscolhida(&#39;O&#39;)">O</button>
+                <button id="tecla-P" onclick="verificaLetraEscolhida(&#39;P&#39;)">P</button>
+                <button id="tecla-Q" onclick="verificaLetraEscolhida(&#39;Q&#39;)">Q</button>
+                <button id="tecla-R" onclick="verificaLetraEscolhida(&#39;R&#39;)">R</button>
+            </div>
+            <div class="teclas">
+                <button id="tecla-S" onclick="verificaLetraEscolhida(&#39;S&#39;)">S</button>
+                <button id="tecla-T" onclick="verificaLetraEscolhida(&#39;T&#39;)">T</button>
+                <button id="tecla-U" onclick="verificaLetraEscolhida(&#39;U&#39;)">U</button>
+                <button id="tecla-V" onclick="verificaLetraEscolhida(&#39;V&#39;)">V</button>
+                <button id="tecla-W" onclick="verificaLetraEscolhida(&#39;W&#39;)">W</button>
+                <button id="tecla-X" onclick="verificaLetraEscolhida(&#39;X&#39;)">X</button>
+                <button id="tecla-Y" onclick="verificaLetraEscolhida(&#39;Y&#39;)">Y</button>
+                <button id="tecla-Z" onclick="verificaLetraEscolhida(&#39;Z&#39;)">Z</button>
+                <button id="btnReiniciar">🎮</button>
+            </div>
+
+        </div>
+        <div id="categoria">Movimento liderado por figuras como Martinho Lutero e João Calvino, que contestou a autoridade da Igreja Católica Romana, resultando em divisões religiosas e transformações na sociedade europeia.</div>
+        <!--inicio modal-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modaBody"></div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--fim modal-->
+
+    <script src="./jogo da forca_files/forca.js.download"></script>
+    <script src="./jogo da forca_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./jogo da forca_files/popper.min.js.download" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./jogo da forca_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</div></body></html>
